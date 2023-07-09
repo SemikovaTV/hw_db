@@ -25,16 +25,19 @@ _____________________________________________________________
 
 ### ТАБЛИЦЫ:
 
-### 1.Сотрудники
-
-- id_sotr, первичный ключ, serial, NOT NULL;
-- ФИО - VARCHAR(M), NOT NULL;
+## ОБЩАЯ:
+- id_sotr;
 - id_okl;
 - id_date;
 - id_dolg;
 - id_podr;
 - id_otd;
 - id_proj;
+
+### 1.Сотрудники
+- id_sotr, первичный ключ, serial, NOT NULL;
+- ФИО - VARCHAR(M), NOT NULL;
+
 
 ### 2.Оклад
 - id_okl, первичный ключ, serial, NOT NULL;
