@@ -21,3 +21,42 @@
 - фамилия varchar(50),
 - ...
 - идентификатор структурного подразделения, внешний ключ, integer).
+_____________________________________________________________
+
+### ТАБЛИЦЫ:
+
+### 1.Сотрудники
+
+- id_sotr, первичный ключ, serial, NOT NULL;
+- ФИО - VARCHAR(M), NOT NULL;
+- id_okl;
+- id_date;
+- id_dolg;
+- id_podr;
+- id_otd;
+- id_proj;
+
+### 2.Оклад
+- id_okl, первичный ключ, serial, NOT NULL;
+- сумма - money, NOT NULL;
+  
+### 3. Дата найма 
+- id_date, первичный ключ, serial, NOT NULL;
+- дата найма - DATE, NOT NULL;
+
+### 4. Должность
+- id_dolg, первичный ключ, serial, NOT NULL;
+- название должности - VARCHAR(M), NOT NULL;
+
+### 5. Подразделение
+- id_podr, первичный ключ, serial, NOT NULL;
+- структурное подразделения - VARCHAR(M), NOT NULL;
+- адрес подразделения - VARCHAR(M), NOT NULL;
+
+### 6. Отдел
+- id_otd, первичный ключ, serial NOT NULL;
+- наименование отдела - VARCHAR(M), NOT NULL;
+
+### 7. Проект
+- id_proj, первичный ключ, serial, NOT NULL;
+- название проекта - VARCHAR(M), NOT NULL;
