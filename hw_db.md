@@ -28,38 +28,42 @@ _____________________________________________________________
 
 ### 1.Сотрудники
 - id_sotr, первичный ключ, serial, NOT NULL;
-- ФИО - VARCHAR(M), NOT NULL;
+- Фамилия VARCHAR(M), NOT NULL;
+- Имя VARCHAR(M), NOT NULL;
+- Отчество VARCHAR(M), NOT NULL;
+- Дата найма DATE, NOT NULL;
 - id_okl;
-- id_date;
 - id_dolg;
+- id_otd;
 - id_proj;
 
 ### 2.Оклад
 - id_okl, первичный ключ, serial, NOT NULL;
 - сумма - money, NOT NULL;
   
-### 3. Дата найма 
-- id_date, первичный ключ, serial, NOT NULL;
-- дата найма - DATE, NOT NULL;
-
-### 4. Должность
+### 3. Должность
 - id_dolg, первичный ключ, serial, NOT NULL;
 - название должности - VARCHAR(M), NOT NULL;
 - id_otd;
-
+  
+### 4. Отдел
+- id_otd, первичный ключ, serial NOT NULL;
+- наименование отдела VARCHAR(M), NOT NULL;
+- id_podr;
+  
 ### 5. Подразделение
 - id_podr, первичный ключ, serial, NOT NULL;
-- структурное подразделения - VARCHAR(M), NOT NULL;
-- адрес подразделения - VARCHAR(M), NOT NULL;
-- id_otd;
+- структурное подразделения VARCHAR(M), NOT NULL;
+- id_reg;
 
-### 6. Отдел
-- id_otd, первичный ключ, serial NOT NULL;
-- наименование отдела - VARCHAR(M), NOT NULL;
-- id_podr;
+
+### 6. Адрес филиала
+- id_reg, первичный ключ, serial, NOT NULL;
+- регион - VARCHAR(M), NOT NULL;
+- город - VARCHAR(M), NOT NULL;
+- улица, номер дома VARCHAR(M), NOT NULL;
 
 ### 7. Проект
 - id_proj, первичный ключ, serial, NOT NULL;
-- название проекта - VARCHAR(M), NOT NULL;
-- id_podr;
-- id_otd;
+- название проекта VARCHAR(M), NOT NULL;
+
