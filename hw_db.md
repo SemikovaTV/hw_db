@@ -55,15 +55,27 @@ _____________________________________________________________
 - id_podr, первичный ключ, serial, NOT NULL;
 - структурное подразделения VARCHAR(M), NOT NULL;
 - id_reg;
-
+- id_gorod;
+- id_adr;
 
 ### 6. Адрес филиала
+- id_adr, первичный ключ, serial, NOT NULL;
+- улица, номер дома VARCHAR(M), NOT NULL;
+- id_gorod;
+
+### 7. Город филиала
+- id_gorod, первичный ключ, serial, NOT NULL;
+- город - VARCHAR(M), NOT NULL;
+- id_reg;
+
+### 8. Регион филиала
 - id_reg, первичный ключ, serial, NOT NULL;
 - регион - VARCHAR(M), NOT NULL;
-- город - VARCHAR(M), NOT NULL;
-- улица, номер дома VARCHAR(M), NOT NULL;
-
-### 7. Проект
+  
+### 9. Проект
 - id_proj, первичный ключ, serial, NOT NULL;
 - название проекта VARCHAR(M), NOT NULL;
 
+### 10. Назначение на проект
+- id_proj;
+- id_sotr;
